@@ -25,12 +25,13 @@ Tulpar is a open source web vulnerability scanner for written to make web penetr
 Installation:
 git clone https://github.com/anilbaranyelken/tulpar.git
 cd tulpar
-pip install ir requirments
+pip install -r requirements
+python2 tulpar.py full http://site.com
 
 Usage:
-python tulpar.py action web_URL
+python2 tulpar.py <action> <URL>
   action      Action: full xss sql fuzzing e-mail credit-card whois links
               portscanner urlEncode cyberthreatintelligence commandInjection
               directoryTraversal fileInclude headerCheck certificate method
               IP2Location FileInputAvailable
-  web_URL     URL
+  URL         URL, example (https://google.com, http://europa.eu/)
