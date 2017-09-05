@@ -2,3 +2,4 @@ python-whois
 futures
 requests
 lxml
+urllib3[secure]
