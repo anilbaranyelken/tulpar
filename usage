@@ -1,9 +1,9 @@
-python tulpar.py action web_URL
+python2 tulpar.py <action> <URL>
   action      Action: full xss sql fuzzing e-mail credit-card whois links
               portscanner urlEncode cyberthreatintelligence commandInjection
               directoryTraversal fileInclude headerCheck certificate method
               IP2Location FileInputAvailable
-  web_URL     URL
+  URL         URL, example (https://google.com, http://europa.eu/) 
 
 Usage: whois
 python tulpar.py  whois https://google.com
