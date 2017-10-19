@@ -22,10 +22,10 @@ Tulpar is a open source web vulnerability scanner for written to make web penetr
 -IP2Location
 -File Input Available Check
 
-Installation:
-git clone https://github.com/anilbaranyelken/tulpar.git
-cd tulpar
-pip install -r requirements
+Standard Installation:  
+`git clone https://github.com/anilbaranyelken/tulpar.git`
+`cd tulpar`  
+`pip install -r requirements`  
 
 Usage:
 python tulpar.py action web_URL
@@ -34,3 +34,8 @@ python tulpar.py action web_URL
               directoryTraversal fileInclude headerCheck certificate method
               IP2Location FileInputAvailable
   web_URL     URL
+
+### Running in docker  
+`cd tulpar`  
+`docker build  -t tulpar:latest .`  
+`docker run tulpar *action* *web_URL*`
