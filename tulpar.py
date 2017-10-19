@@ -197,8 +197,8 @@ def fileInclude(url,dosyaAdi):
 def headerInformation(url,dosyaAdi):
     sonuc = requests.get(url, verify=False)
     raporIcerik=""
-    print "[+]Server: ", sonuc.headers['Server']
-    print "[+]Technology: ", sonuc.headers['X-Powered-By']
+    print "[+]Server: ", sonuc.headers.get('Server')
+    print "[+]Technology: ", sonuc.headers.get('X-Powered-By')
     try:
         contenttype = sonuc.headers['X-Content-Type']
         if contenttype:
